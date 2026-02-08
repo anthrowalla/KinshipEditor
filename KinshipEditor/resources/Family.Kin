@@ -1,0 +1,650 @@
+<?xml version="1.0"?>
+<!DOCTYPE kindata>
+
+<!--  Kinship Editor Save File - Do not edit by hand!  -->
+
+<kindata>
+<people>
+  <person>
+    <name>Margaret Gosden</name><id>1</id><sex>Female</sex>
+    <stats><born q="9">1948</born><died q="9">NA</died></stats>
+    <location><x>277</x><y>149</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>David Gosden</name><id>2</id><sex>Male</sex>
+    <stats><born q="9">1948</born><died q="9">NA</died></stats>
+    <location><x>321</x><y>148</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Tom Gosden</name><id>3</id><sex>Male</sex>
+    <stats><born q="9">1975</born><died q="9">NA</died></stats>
+    <location><x>247</x><y>201</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Joe Gosden</name><id>4</id><sex>Male</sex>
+    <stats><born q="9">1978</born><died q="9">NA</died></stats>
+    <location><x>298</x><y>201</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Amy Gosden</name><id>5</id><sex>Female</sex>
+    <stats><born q="9">1983</born><died q="9">NA</died></stats>
+    <location><x>342</x><y>204</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Roy Gosden</name><id>6</id><sex>Female</sex>
+    <stats><born q="9">1912</born><died q="9">1992</died></stats>
+    <location><x>359</x><y>88</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Amy Gosden</name><id>7</id><sex>Male</sex>
+    <stats><born q="9">1922</born><died q="9">1971</died></stats>
+    <location><x>415</x><y>90</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Jackie</name><id>8</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>376</x><y>152</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Sue</name><id>9</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>449</x><y>154</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Rod</name><id>10</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>513</x><y>152</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Mari Patton</name><id>11</id><sex>Female</sex>
+    <stats><born q="9">1916</born><died q="9">1987</died></stats>
+    <location><x>259</x><y>97</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>John Patton</name><id>12</id><sex>Male</sex>
+    <stats><born q="9">1913</born><died q="9">2004</died></stats>
+    <location><x>205</x><y>96</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Richard Hugh Patton</name><id>13</id><sex>Male</sex>
+    <stats><born q="9">1943</born><died q="9">NA</died></stats>
+    <location><x>172</x><y>145</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Sue Patton</name><id>14</id><sex>Female</sex>
+    <stats><born q="9">52</born><died q="9">NA</died></stats>
+    <location><x>110</x><y>146</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Daniel Patton</name><id>15</id><sex>Male</sex>
+    <stats><born q="9">1982</born><died q="9">NA</died></stats>
+    <location><x>112</x><y>198</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Jack  Patton</name><id>16</id><sex>Male</sex>
+    <stats><born q="9">1984</born><died q="9">NA</died></stats>
+    <location><x>159</x><y>199</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Bret</name><id>17</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>367</x><y>252</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Lillian Patton</name><id>18</id><sex>Female</sex>
+    <stats><born q="9">1887</born><died q="9">1972</died></stats>
+    <location><x>142</x><y>32</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Ross</name><id>19</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>402</x><y>252</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Luke</name><id>20</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>437</x><y>253</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Sven</name><id>21</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>488</x><y>213</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Ernest Patton</name><id>22</id><sex>Male</sex>
+    <stats><born q="9">1884</born><died q="9">1984</died></stats>
+    <location><x>201</x><y>32</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Hugh Patton</name><id>23</id><sex>Male</sex>
+    <stats><born q="9">1921</born><died q="9">NA</died></stats>
+    <location><x>83</x><y>87</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Pat Patton</name><id>24</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>38</x><y>89</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Mike Patton</name><id>25</id><sex>Male</sex>
+    <stats><born q="9">47</born><died q="9">NA</died></stats>
+    <location><x>132</x><y>321</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Ruth patton</name><id>26</id><sex>Female</sex>
+    <stats><born q="9">1950</born><died q="9">NA</died></stats>
+    <location><x>175</x><y>324</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Mark Patton</name><id>27</id><sex>Male</sex>
+    <stats><born q="9">1974</born><died q="9">2000</died></stats>
+    <location><x>89</x><y>374</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>James Patton</name><id>28</id><sex>Male</sex>
+    <stats><born q="9">1976</born><died q="9">NA</died></stats>
+    <location><x>185</x><y>381</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Gill Thomson</name><id>29</id><sex>Female</sex>
+    <stats><born q="9">1950</born><died q="9">NA</died></stats>
+    <location><x>280</x><y>326</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Andrew Thomson</name><id>30</id><sex>Male</sex>
+    <stats><born q="9">1952</born><died q="9">NA</died></stats>
+    <location><x>326</x><y>324</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Ginnie Thomson</name><id>31</id><sex>Female</sex>
+    <stats><born q="9">1979</born><died q="9">NA</died></stats>
+    <location><x>286</x><y>378</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Sophie Thomson</name><id>32</id><sex>Female</sex>
+    <stats><born q="9">1981</born><died q="9">NA</died></stats>
+    <location><x>365</x><y>381</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Joseph Ball</name><id>33</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>318</x><y>36</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Sally Ball</name><id>34</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>274</x><y>36</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Margorie Morgan</name><id>35</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>550</x><y>83</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>William Ball</name><id>36</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>680</x><y>86</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Em Morgan</name><id>37</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>601</x><y>83</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Jane Davies</name><id>38</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>591</x><y>171</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Ray Davies</name><id>39</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>646</x><y>172</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Amellia Davies</name><id>40</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>579</x><y>222</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Alice Davies</name><id>41</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>620</x><y>223</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Kate Davies</name><id>42</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>667</x><y>225</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Frank Gosden</name><id>43</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>377</x><y>25</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Maude Gosden</name><id>44</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>423</x><y>26</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Daisy Barker</name><id>45</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>496</x><y>29</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>John Barker</name><id>46</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>534</x><y>28</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Rene ball</name><id>47</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>727</x><y>87</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>John Ball</name><id>48</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>682</x><y>145</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Sally Ball</name><id>49</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>725</x><y>144</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Steven Ball</name><id>50</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>758</x><y>145</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>David Ball</name><id>51</id><sex>Male</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>784</x><y>145</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Dianne Ball</name><id>52</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>820</x><y>147</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Les Ball</name><id>53</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>849</x><y>147</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Liz Ball</name><id>54</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>880</x><y>148</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+  <person>
+    <name>Person 55</name><id>55</id><sex>Female</sex>
+    <stats><born q="9">NA</born><died q="9">NA</died></stats>
+    <location><x>233</x><y>429</y></location>
+    <comment>No Comment</comment>
+  </person>
+
+</people>
+
+<unions>
+  <union>
+    <id>55</id><location><x>233</x><y>375</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>28</partner>
+      <partner>31</partner>
+    </partners>
+    <siblings>
+      <sibling>55</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>56</id><location><x>704</x><y>84</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>36</partner>
+      <partner>47</partner>
+    </partners>
+    <siblings>
+      <sibling>48</sibling>
+      <sibling>49</sibling>
+      <sibling>50</sibling>
+      <sibling>51</sibling>
+      <sibling>52</sibling>
+      <sibling>53</sibling>
+      <sibling>54</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>57</id><location><x>515</x><y>27</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>45</partner>
+      <partner>46</partner>
+    </partners>
+    <siblings>
+      <sibling>7</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>58</id><location><x>399</x><y>26</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>43</partner>
+      <partner>44</partner>
+    </partners>
+    <siblings>
+      <sibling>6</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>59</id><location><x>618</x><y>169</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>38</partner>
+      <partner>39</partner>
+    </partners>
+    <siblings>
+      <sibling>40</sibling>
+      <sibling>41</sibling>
+      <sibling>42</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>60</id><location><x>574</x><y>82</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>35</partner>
+      <partner>37</partner>
+    </partners>
+    <siblings>
+      <sibling>38</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>61</id><location><x>300</x><y>35</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>34</partner>
+      <partner>33</partner>
+    </partners>
+    <siblings>
+      <sibling>11</sibling>
+      <sibling>35</sibling>
+      <sibling>36</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>62</id><location><x>298</x><y>148</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>2</partner>
+      <partner>1</partner>
+    </partners>
+    <siblings>
+      <sibling>3</sibling>
+      <sibling>4</sibling>
+      <sibling>5</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>63</id><location><x>389</x><y>86</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>7</partner>
+      <partner>6</partner>
+    </partners>
+    <siblings>
+      <sibling>2</sibling>
+      <sibling>8</sibling>
+      <sibling>9</sibling>
+      <sibling>10</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>64</id><location><x>231</x><y>95</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>11</partner>
+      <partner>12</partner>
+    </partners>
+    <siblings>
+      <sibling>1</sibling>
+      <sibling>13</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>65</id><location><x>140</x><y>142</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>14</partner>
+      <partner>13</partner>
+    </partners>
+    <siblings>
+      <sibling>15</sibling>
+      <sibling>16</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>66</id><location><x>402</x><y>149</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>8</partner>
+    </partners>
+    <siblings>
+      <sibling>17</sibling>
+      <sibling>19</sibling>
+      <sibling>20</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>67</id><location><x>468</x><y>153</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>9</partner>
+    </partners>
+    <siblings>
+      <sibling>21</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>68</id><location><x>173</x><y>31</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>18</partner>
+      <partner>22</partner>
+    </partners>
+    <siblings>
+      <sibling>12</sibling>
+      <sibling>23</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>69</id><location><x>59</x><y>88</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>24</partner>
+      <partner>23</partner>
+    </partners>
+    <siblings>
+      <sibling>25</sibling>
+      <sibling>29</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>70</id><location><x>150</x><y>321</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>25</partner>
+      <partner>26</partner>
+    </partners>
+    <siblings>
+      <sibling>27</sibling>
+      <sibling>28</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+  <union>
+    <id>71</id><location><x>302</x><y>323</y></location>
+    <stats><type>Marriage</type>
+        <begin q="9">NA</begin><end q="9">NA</end><reason>NA</reason></stats>
+    <partners>
+      <partner>29</partner>
+      <partner>30</partner>
+    </partners>
+    <siblings>
+      <sibling>31</sibling>
+      <sibling>32</sibling>
+    </siblings>
+    <comment>No Comment</comment>
+  </union>
+</unions>
+
+<parameters>
+  <origin><x>0</x><y>0</y></origin>
+  <ego>0</ego>
+  <marriage>0</marriage>
+  <label>2</label>
+  <beginyear>NA</beginyear>
+  <endyear>NA</endyear>
+  <editable>true</editable>
+  <egofixed>false</egofixed>
+</parameters>
+</kindata>

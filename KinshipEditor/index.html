@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinship Editor</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div id="menubar">
+    <div class="menu-group">
+      <div class="menu-item" id="menu-file">
+        File
+        <div class="menu-dropdown" id="dropdown-file">
+          <div class="menu-action" id="action-new">New <span class="shortcut">Ctrl+N</span></div>
+          <div class="menu-action" id="action-open">Open... <span class="shortcut">Ctrl+O</span></div>
+          <div class="menu-separator"></div>
+          <div class="menu-action" id="action-save">Save <span class="shortcut">Ctrl+S</span></div>
+          <div class="menu-action" id="action-saveas">Save As... <span class="shortcut">Ctrl+Shift+S</span></div>
+          <div class="menu-separator"></div>
+          <div class="menu-action" id="action-clearall">Clear All</div>
+          <div class="menu-separator"></div>
+          <div class="menu-action" id="action-render">Render Visible <span class="shortcut">Ctrl+R</span></div>
+          <div class="menu-action" id="action-renderchart">Render Chart <span class="shortcut">Ctrl+Shift+R</span></div>
+        </div>
+      </div>
+      <div class="menu-item" id="menu-labels">
+        Labels
+        <div class="menu-dropdown" id="dropdown-labels">
+          <div class="menu-action menu-check" data-label="0" id="label-none">No Label</div>
+          <div class="menu-action menu-check" data-label="1" id="label-initials">Initials</div>
+          <div class="menu-action menu-check" data-label="2" id="label-first">First</div>
+          <div class="menu-action menu-check" data-label="3" id="label-last">Last</div>
+          <div class="menu-action menu-check active" data-label="4" id="label-whole">Whole</div>
+        </div>
+      </div>
+      <div class="menu-item" id="menu-help">
+        Help
+        <div class="menu-dropdown" id="dropdown-help">
+          <div class="menu-action" id="action-help">Kinship Editor Help</div>
+        </div>
+      </div>
+    </div>
+    <img id="logo" src="resources/logoKinship.png" alt="Kinship Editor">
+  </div>
+
+  <div id="panel-top">
+    <div class="panel-row">
+      <label>Birth Year</label>
+      <input type="text" id="field-birthyear" size="6">
+      <label>Death Year</label>
+      <input type="text" id="field-deathyear" size="6">
+      <label id="label-name">Name</label>
+      <input type="text" id="field-name" size="18">
+      <label id="label-reason" style="display:none">Reason</label>
+      <select id="field-reason" style="display:none">
+        <option>NA</option>
+        <option>Death</option>
+        <option>Divorce</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="panel-row">
+      <label>Year</label>
+      <input type="text" id="field-beginyear" size="6" value="NA">
+      <input type="text" id="field-endyear" size="6" value="NA">
+      <button id="btn-step">Step to...</button>
+      <span id="current-year" style="display:none"></span>
+      <label class="checkbox-label"><input type="checkbox" id="chk-editable" checked> Editable</label>
+      <label class="checkbox-label"><input type="checkbox" id="chk-fixego"> Fix Ego</label>
+    </div>
+    <div class="panel-row">
+      <label>Comment</label>
+      <textarea id="field-comment" rows="3" cols="40">NA</textarea>
+    </div>
+  </div>
+
+  <div id="canvas-container">
+    <canvas id="kinship-canvas"></canvas>
+    <div id="context-menu" style="display:none">
+    <div class="context-item" data-type="Female">Female</div>
+    <div class="context-item" data-type="Male">Male</div>
+    <div class="context-item" data-type="Neuter">Neuter</div>
+    <div class="context-item" data-type="Union">Union</div>
+    </div>
+  </div>
+</div>
+
+<div id="help-panel" style="display:none">
+  <div id="help-titlebar">
+    <span>Kinship Editor Help</span>
+    <button id="help-close" title="Close">&times;</button>
+  </div>
+  <div id="help-content"></div>
+</div>
+
+<div id="save-dialog" class="dialog-overlay" style="display:none">
+  <div class="dialog dialog-small">
+    <div class="dialog-title">Do you want to save?</div>
+    <div class="dialog-buttons">
+      <button id="save-yes">Save</button>
+      <button id="save-no">Don't Save</button>
+      <button id="save-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<input type="file" id="file-input" accept=".kin,.xml" style="display:none">
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
