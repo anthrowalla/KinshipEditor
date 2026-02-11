@@ -4,7 +4,7 @@
 import { state, Person, Marriage, findPerson, findMarriage, findFreePerson, findFreeMarriage,
          resetState, resetBoundingBox, SEX_FEMALE, SEX_MALE, SEX_NEUTER,
          NOLABEL, INITIALS, FIRST, LAST, WHOLE } from './model.js';
-import { render } from './renderer.js';
+import { render, renderSVG } from './renderer.js';
 import { loadFromXML, saveToXML } from './fileio.js';
 
 // Editor state
@@ -228,14 +228,22 @@ canvas.addEventListener('mousemove', (e) => {
   }
 });
 
+// Prevent browser context menu when Shift+Control is held
+canvas.addEventListener('contextmenu', (e) => {
+  if (e.shiftKey && e.ctrlKey) {
+    e.preventDefault();
+    return false;
+  }
+});
+
 // Mouse up handler
 canvas.addEventListener('mouseup', (e) => {
   if (!editor.editable) return;
 
   const pos = getMousePos(e);
 
-  if (e.ctrlKey && !e.shiftKey && !e.metaKey && !e.altKey) {
-    // Delete on ctrl+click
+  if (e.ctrlKey && e.shiftKey && !e.metaKey && !e.altKey) {
+    // Delete on shift+ctrl+click
     const which = findPerson(pos.x, pos.y);
     if (which >= 0) {
       state.folks[which].delPerson();
@@ -518,6 +526,7 @@ document.getElementById('action-saveas').addEventListener('click', doSaveAs);
 document.getElementById('action-clearall').addEventListener('click', doClearAll);
 document.getElementById('action-render').addEventListener('click', () => doRender(true));
 document.getElementById('action-renderchart').addEventListener('click', () => doRender(false));
+document.getElementById('action-rendersvg').addEventListener('click', doRenderSVG);
 
 // Label menu items
 document.querySelectorAll('.menu-check').forEach(item => {
@@ -719,6 +728,29 @@ function doRender(doBounds) {
     a.click();
     URL.revokeObjectURL(a.href);
   }, 'image/png');
+}
+
+// Render to SVG
+function doRenderSVG() {
+  storeInfo();
+  const svg = renderSVG({
+    originX: editor.originX,
+    originY: editor.originY,
+    whichFolk: editor.whichFolk,
+    whichKnot: editor.whichKnot,
+  });
+
+  const blob = new Blob([svg], { type: 'image/svg+xml' });
+  const a = document.createElement('a');
+  let fname = editor.fileName || 'kinship';
+  if (fname.includes('.')) fname = fname.substring(0, fname.lastIndexOf('.'));
+  if (editor.whichFolk >= 0) fname += '_' + state.folks[editor.whichFolk].name;
+  else fname += '_NoEgo';
+  if (editor.refYear) fname += '_' + editor.refYear;
+  a.href = URL.createObjectURL(blob);
+  a.download = fname + '.svg';
+  a.click();
+  URL.revokeObjectURL(a.href);
 }
 
 // Save dialog

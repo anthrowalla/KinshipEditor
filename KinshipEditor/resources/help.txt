@@ -1,143 +1,66 @@
 *** Creating People or Unions
 
-Click at an empty point of the workspace approximately where you
-want a new PERSON or UNION to appear. A menu will appear at that
-point. Choose the symbol you want. To cancel the menu without
-making a choice, click somewhere outside the menu boundaries.
+Click at an empty point of the workspace approximately where you want a new PERSON or UNION to appear. A menu will appear at that point. Choose the symbol you want. To cancel the menu without making a choice, click somewhere outside the menu boundaries.
 
 *** Deleting People or Unions
 
-Hold down the CONTROL key and click on a symbol. This will be
-deleted along with its relationships.
-
-If you are running Kinship Editor as an application the Delete
-All entry under the File Menu deletes all people, unions and
-relationships.
+Hold down the CONTROL key and click on a symbol. This will be deleted along with its relationships.  If you are running Kinship Editor as an application the Delete All entry under the File Menu deletes all people, unions and relationships.
 
 *** Relating People and Unions
 
-Hold down the SHIFT key and drag from a PERSON to either the top
-or bottom of a UNION. Dragging to the top of a UNION symbol (=)
-adds a link to that PERSON as a parent/spouse, dragging to the
-bottom of a UNION symbol adds the PERSON as a child/sibling.
+Hold down the SHIFT key and drag from a PERSON to either the top or bottom of a UNION. Dragging to the top of a UNION symbol (=) adds a link to that PERSON as a parent/spouse, dragging to the bottom of a UNION symbol adds the PERSON as a child/sibling.
 
 *** Deleting relationships
 
-Depending on your machine, hold down the ALT or OPTION or COMMAND
-key and drag from a PERSON to either the top or bottom of a
-UNION. If there was a relationship, it will be deleted.
+Depending on your machine, hold down the ALT or OPTION or COMMAND key and drag from a PERSON to either the top or bottom of a UNION. If there was a relationship, it will be deleted.
 
-The Delete All entry under the File Menu deletes all people,
-unions and relationships.
+The Delete All entry under the File Menu deletes all people, unions and relationships.
 
 *** Moving People and Unions
 
-Click on and drag a PERSON or UNION symbol to move it. The links
-will automatically be redrawn. If you hold down the SHIFT key and
-move a UNION, you will also move the immediate nuclear family
-associated with that UNION. If you hold down the ALT (or OPTION
-or COMMAND) key while moving a UNION you will move the entire
-lineage descended from that UNION.
+Click on and drag a PERSON or UNION symbol to move it. The links will automatically be redrawn. If you hold down the SHIFT key and move a UNION, you will also move the immediate nuclear family associated with that UNION. If you hold down the ALT (or OPTION or COMMAND) key while moving a UNION you will move the entire lineage descended from that UNION.
 
 *** Entering information about PEOPLE and UNIONS
 
-A limited amount of information can be entered about people or
-unions in this demonstration version. Click on a person or union.
-The symbol should turn red. You can then fill in the information
-at the top of the window. Information is not recorded unless you
-a) change to a different field, or b) type the TAB key. Normally
-this suggests that the last entry should be followed by a TAB. In
-particular the formation dates, end dates, birth dates and death
-dates are be used for the 'animated' genealogy feature. (See
-Animated Genealogies)
+A limited amount of information can be entered about people or unions in this demonstration version. Click on a person or union.  The symbol should turn red. You can then fill in the information at the top of the window. Information is not recorded unless you a) change to a different field, or b) type the TAB key. Normally this suggests that the last entry should be followed by a TAB. In particular the formation dates, end dates, birth dates and death dates are be used for the 'animated' genealogy feature. (See Animated Genealogies)
 
-This information is displayed when a person is selected by
-clicking on them.
+This information is displayed when a person is selected by clicking on them.
 
 *** Animated Genealogies
 
-Animated genealogies are useful for observing the development of
-relationships over time.
+Animated genealogies are useful for observing the development of relationships over time.
 
-If you enter a year in the YEAR field, only people alive and
-unions active in or before that year will be displayed. People
-who are deceased and unions terminated as of that year will be
-drawn with a bar through the symbol. If you enter a second year
-in the field to the right of the YEAR field as well, and click
-the STEP button, the genealogy will be redrawn from year to year
-to show the progression from the intial state to the final state.
+If you enter a year in the YEAR field, only people alive and unions active in or before that year will be displayed. People who are deceased and unions terminated as of that year will be drawn with a bar through the symbol. If you enter a second year in the field to the right of the YEAR field as well, and click the STEP button, the genealogy will be redrawn from year to year to show the progression from the intial state to the final state.
 
 *** Labelling People in the Genealogy
 
-If you have entered names for people these names can be used to
-label the symbols. The menu just to the top left of the Comment
-field choose the labelling style. The choices are No Label,
-Initials, First Name, Last Name and Whole. You can change your
-choice at any time and the new labelling style will come into
-immediate use. This does not affect the way you enter names, only
-the display on the genealogy.
+If you have entered names for people these names can be used to label the symbols. The menu just to the top left of the Comment field choose the labelling style. The choices are No Label, Initials, First Name, Last Name and Whole. You can change your choice at any time and the new labelling style will come into immediate use. This does not affect the way you enter names, only the display on the genealogy.
 
-If you do not enter names, default names Person 1, Person 2 etc.
-are generated automatically.
+If you do not enter names, default names Person 1, Person 2 etc.  are generated automatically.
 
 *** Making the diagram static
 
-If you check the Editable box, the diagram can be changed. If it
-is unchecked, the diagram is immutable. This is useful for
-preparing set examples, particularly for use in the applet
-version of Kinship Editor, which can then be used as a diagram
-display tool. The Fix Ego checkbox currently locks the display
-when checked. Its use will be expanded in future versions.
+If you check the Editable box, the diagram can be changed. If it is unchecked, the diagram is immutable. This is useful for preparing set examples, particularly for use in the applet version of Kinship Editor, which can then be used as a diagram display tool. The Fix Ego checkbox currently locks the display when checked. Its use will be expanded in future versions.
 
 *** Saving your genealogy
 
-The File Menu has a save option when Kinship Editor is not
-embedded as an applet. Genealogies are saved in XML, (eXtended
-Markup Language). XML is the basis of a whole series of document
-technologies that will allow documents to be used with a range of
-applications. These files can also be displayed in XML aware
-browsers and wordprocessors.
+The File Menu has a save option when Kinship Editor is not embedded as an applet. Genealogies are saved in XML, (eXtended Markup Language). XML is the basis of a whole series of document technologies that will allow documents to be used with a range of applications. These files can also be displayed in XML aware browsers and wordprocessors.
 
-Select SAVE in the File Menu, and a dialogue box will let you
-select a file name. These should ordinarily end in .xml if you
-want to use this file for future analysis. This is optional
-however. The genealogical information, the data associated with
-each person and union, the positions on the screen, the marking
-of ego (indicated in red), whether the diagram can be edited, the
-labelling mode and the start and end years of the animation
-option are all saved.
+Select SAVE in the File Menu, and a dialogue box will let you select a file name. These should ordinarily end in .xml if you want to use this file for future analysis. This is optional however. The genealogical information, the data associated with each person and union, the positions on the screen, the marking of ego (indicated in red), whether the diagram can be edited, the labelling mode and the start and end years of the animation option are all saved.
 
 
 *** Loading a genealogy xxx
 
-If you are running Kinship Editor as an application there is a
-Load option under the File Menu. Select LOAD, choose a filename,
-and it will be loaded and rendered. We are currently working on
-XML conversion tools to convert existing genealogical formats
-into the file format we use.
+If you are running Kinship Editor as an application there is a Load option under the File Menu. Select LOAD, choose a filename, and it will be loaded and rendered. We are currently working on XML conversion tools to convert existing genealogical formats into the file format we use.
 
-If you are running KE on a web page, there is a menu of choices
-near the top left of the window that includes genealogies you can
-load.
+If you are running KE on a web page, there is a menu of choices near the top left of the window that includes genealogies you can load.
 
 *** Using Kinship Editor on a Web Page
 
-If you insert code similar to the following in a web page you can
-deploy your own examples:
+If you insert code similar to the following in a web page you can embed your own examples:
 
-<APPLET CODE="KinshipEditor.class" archive="Kinedit90applet.jar"
-	WIDTH=620 HEIGHT=480>
-	<param name="URL" value="a8.xml"><param name="Edit" value="yes">
-	<param name="URL1" value="a8.xml"><param name="LABEL1" value="a8">
-	<param name="URL2" value="a9.xml"><param name="LABEL2" value="a9">
-</APPLET>
+<iframe src="kinshipeditor.html" width="1000" height="1000">Kinship Editor</iframe>
+[Need to assign default content so it comes up as diagram]
 
-The URL param is the genealogy to display upon starting up. Edit
-indicates if the diagram can be edited or not, overriding the
-setting saved in the genealogy file. URL1 through URL30 are menu
-choices available to the user running this web page.
-LABEL1-LABEL30 are what to call these in the menu. If LABELS are
-not entered, the file name is used instead.  The genealogy files
-must be on the same server and in the same folder on that server
-as the web page in which Kinship Editor is embedded. You can also
-run the web page directly from your local disk.
+[Need to do equivalents to following]
+The URL param is the genealogy to display upon starting up. Edit indicates if the diagram can be edited or not, overriding the setting saved in the genealogy file. URL1 through URL30 are menu choices available to the user running this web page.  LABEL1-LABEL30 are what to call these in the menu. If LABELS are not entered, the file name is used instead.  The genealogy files must be on the same server and in the same folder on that server as the web page in which Kinship Editor is embedded. You can also run the web page directly from your local disk.

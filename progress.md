@@ -4,9 +4,14 @@
 
 KinshipEditor is a kinship/genealogy diagram editor originally written as a Java AWT application in the late 1990s (copyright 2006, Centre for Social Anthropology and Computing, University of Kent, by Michael D. Fischer). It has been converted to a JavaScript web application using HTML5 Canvas, CSS, and ES Modules.
 
+## GitHub Repository
+
+https://github.com/anthrowalla/KinshipEditor
+
 ## Project Location
 
-`/Users/mike/Dropbox/HRAF/2026/KinshipEditor/KinshipEditor/`
+`/Users/mike/Dropbox/HRAF/2026/KinshipEditor/KinshipEditor/` (web app)
+`/Users/mike/Dropbox/HRAF/2026/KinshipEditor/src/` (original Java source)
 
 ## What Was Done
 
@@ -30,7 +35,7 @@ Ported the entire Java AWT application (~9,500 lines across 36 Java files) to ~2
 | `index.html` | Main HTML: menubar (File/Labels/Help + logo), property panel, canvas, dialogs |
 | `styles.css` | Full styling for all UI components |
 | `js/model.js` | Data model: Person, Marriage classes, state management, utility functions |
-| `js/renderer.js` | Canvas 2D rendering: symbols, lines, labels |
+| `js/renderer.js` | Canvas + SVG 2D rendering: symbols, lines, labels |
 | `js/fileio.js` | XML load/save for .kin file format |
 | `js/app.js` | Main app: event handling, UI, menus, animation |
 | `resources/logoKinship.png` | Application logo (displayed top-right in menubar) |
@@ -42,12 +47,12 @@ Ported the entire Java AWT application (~9,500 lines across 36 Java files) to ~2
 - **Person symbols**: Female (circle), Male (triangle), Neuter (square)
 - **Union symbol**: Equals sign (=)
 - **Relationship lines**: Spouse lines (to top of union), child/sibling lines (to bottom of union)
-- **Mouse interactions**: Click to select, drag to move, shift+drag to create relationships, ctrl+click to delete, alt/meta+drag to remove relationships
+- **Mouse interactions**: Click to select, drag to move, shift+drag to create relationships, shift+ctrl+click to delete, alt/meta+drag to remove relationships
 - **Union dragging**: Shift+drag union moves nuclear family, Alt+drag union moves entire lineage
 - **Property panel**: Birth/death years, name, comment, reason (for unions)
 - **Labels menu**: No Label, Initials, First, Last, Whole name display options
 - **File operations**: New, Open (.kin/.xml), Save, Save As, Clear All
-- **Render/Export**: Render Visible (visible area as PNG), Render Chart (full chart as PNG)
+- **Render/Export**: Render Visible (visible area as PNG), Render Chart (full chart as PNG), Render SVG (full chart as vector SVG with timeline filtering)
 - **Timeline animation**: Step through years showing births/deaths/marriages over time
 - **Editable toggle**: Lock/unlock the diagram
 - **Fix Ego**: Lock the ego selection
@@ -70,30 +75,54 @@ Ported the entire Java AWT application (~9,500 lines across 36 Java files) to ~2
 | 16 | Low | Unused birthLabel/deathLabel variables | Removed |
 | -- | Low | Missing radix on parseInt calls | Added explicit radix 10 throughout |
 
-### 5. Application Architecture
+### 5. Repository Setup
+
+- Initialized git repository with `.gitignore` (excludes `.DS_Store`, `.claude/`, `webapp` symlink, `dist/`, `CVS/`, Java build artifacts)
+- Created public GitHub repo at https://github.com/anthrowalla/KinshipEditor
+- Pushed initial commit with all 61 files (original Java source + JavaScript web port + resources)
+
+### 6. Application Architecture
 
 ```
-KinshipEditor/
-  index.html          - Main HTML structure
-  styles.css          - All styles
-  js/
-    app.js            - Main controller (~877 lines)
-    model.js          - Data model (~320 lines)
-    renderer.js       - Canvas rendering (~304 lines)
-    fileio.js         - XML I/O (~250 lines)
-  resources/
-    logoKinship.png   - Logo image
-    help.txt          - Help documentation
-    Family.Kin        - Sample data file
+KinshipEditor/              (repo root)
+  .gitignore
+  progress.md               - This file
+  build.xml                 - Original Ant build file
+  Manifest                  - Original JAR manifest
+  lib/                      - Original Java libraries
+  src/                      - Original Java source (36 files)
+  resources/                - Original Java resources
+  KinshipEditor/            (web app)
+    index.html              - Main HTML structure
+    styles.css              - All styles
+    start_server            - Server launch script
+    Family.Kin              - Sample data file
+    js/
+      app.js                - Main controller (~877 lines)
+      model.js              - Data model (~320 lines)
+      renderer.js           - Canvas + SVG rendering (~553 lines)
+      fileio.js             - XML I/O (~250 lines)
+    resources/
+      logoKinship.png       - Logo image
+      help.txt              - Help documentation
+      Family.Kin            - Sample data file
 ```
 
-### 6. Data Model
+### 7. Recent Enhancements (2025)
+
+**January 2025:**
+- Added **Render SVG** feature: Exports kinship diagram as SVG vector format with proper timeline filtering (respects reference year for both people and unions)
+- Changed **delete interaction** from Ctrl+click to **Shift+Ctrl+click** to avoid browser context menu interference
+- SVG export matches canvas display exactly by using `hasBegun()` and `hasEnded()` checks
+- Browser context menu prevented when Shift+Ctrl keys are held during delete operation
+
+### 8. Data Model
 
 - **`state`** object: `folks[]`, `folkIndex`, `knots[]`, `knotIndex`, `idCounter`, `refYear`, `doLabel`, `symbolSize`
 - **`Person`** class: `myId`, `sex`, `location`, `name`, `comment`, `yob/yod`, `marriages[]`, `parents`, `parentalUnions[]`, `selected`, `drawn`
 - **`Marriage`** class: `location`, `mid/id`, `type`, `begin/end`, `comment`, `reason`, `spouses[]`, `sibset[]`, `drawn`
 
-### 7. How to Run
+### 8. How to Run
 
 ```bash
 cd /Users/mike/Dropbox/HRAF/2026/KinshipEditor/KinshipEditor/
@@ -104,17 +133,23 @@ Then open `http://localhost:8080` in a browser.
 
 **Note:** A local HTTP server is required because the app uses ES Modules (`import`/`export`).
 
+## Completed Milestones
+
+1. Full Java-to-JavaScript port
+2. Code review and 10 bug fixes (2 critical, 4 medium, 4 low)
+3. Logo and Help menu with floating draggable panel
+4. GitHub repository created and pushed
+
 ## Pending / Future Work
 
-- No pending tasks. All user requests have been addressed.
-- The application is functional and the web server is running on port 8080.
+- None at this time. All user requests have been addressed.
 
 ## Java Source Files (Reference)
 
-The original Java source files are at `/Users/mike/Dropbox/HRAF/2026/KinshipEditor/src/`:
-- `Person.java` (433 lines)
-- `Marriage.java` (491 lines)
-- `Kind.java` (172 lines)
-- `KinshipEditor.java` (1051 lines)
-- `KinEditPanel.java` (898 lines)
-- Plus ~31 additional support files
+The original Java source files are in `src/`:
+- `Person.java` (433 lines) - Individual in genealogy
+- `Marriage.java` (491 lines) - Union between people
+- `Kind.java` (172 lines) - Gender/symbol types
+- `KinshipEditor.java` (1051 lines) - Main frame/controller
+- `KinEditPanel.java` (898 lines) - Canvas editing panel
+- Plus ~31 additional support files (help dialogs, XML parsing, JPEG encoding, etc.)
