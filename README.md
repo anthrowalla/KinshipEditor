@@ -6,12 +6,12 @@ A kinship diagram and genealogy editor for visualizing anthropological relations
 
 ## Overview
 
-KinshipEditor is a specialized tool for creating and editing kinship diagrams using standardized anthropological symbols. It allows researchers and students to document family relationships, marriage unions, and genealogical data through an intuitive drag-and-drop interface.
+KinshipEditor is a specialized tool for creating and editing kinship diagrams using standardized anthropological symbols. It allows researchers and students to document family relationships, unions (such as marriage), and genealogical data through an intuitive drag-and-drop interface.
 
 ### Key Features
 
 - **Standardized Symbols**: Female (circle), Male (triangle), Neuter (square)
-- **Union Representation**: Equals sign (=) for marriages/relationships
+- **Union Representation**: Equals sign (=) for unions/relationships
 - **Interactive Editing**: Click, drag, and keyboard modifiers for all operations
 - **Data Management**: Track names, dates, locations, and comments for individuals and unions
 - **Timeline Animation**: Step through years to visualize births and deaths
@@ -89,7 +89,7 @@ The original Java AWT application for desktop use.
 ### Creating a Diagram
 
 1. **Add individuals**: Use the panel to create male, female, or neuter symbols
-2. **Create unions**: Add union (=) symbols to represent marriages
+2. **Create unions**: Add union (=) symbols to represent unions such as marriages or parentage bonds
 3. **Connect relationships**:
    - **Shift+drag** from a person to a union (spouse connection)
    - **Shift+drag** from a union to a person (child connection)
@@ -145,8 +145,8 @@ KinshipEditor uses an XML-based `.kin` format:
       <comment>Example person</comment>
     </person>
   </people>
-  <marriages>
-    <marriage id="1" begin="1975" end="1985">
+  <unions>
+    <union id="1" begin="1975" end="1985">
       <spouses>
         <spouse ref="1"/>
         <spouse ref="2"/>
@@ -154,8 +154,8 @@ KinshipEditor uses an XML-based `.kin` format:
       <children>
         <child ref="3"/>
       </children>
-    </marriage>
-  </marriages>
+    </union>
+  </unions>
 </kinshipdiagram>
 ```
 
